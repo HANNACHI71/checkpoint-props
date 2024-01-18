@@ -1,25 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
-
+import ProductsCards from './Components/ProductsCards';
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Workshop Props</h1>
+    <div className='Products'>
+    <ProductsCards name="Montre sport" price="220$" mark="Swatch" >
+    <img src='./images/montresport.jpg' alt='Montre Sport'/>
+    </ProductsCards>
+    <ProductsCards name="Montre classique" price="380$" mark="Ratel" >
+    <img src='./images/montreclassique.jpg' alt='Montre Classique'/>   
+    </ProductsCards>
+    <ProductsCards name="Montre chic" price="420$" mark="Swiss" > 
+    <img src='./images/montrechic.jpg' alt='Montre Chic'/>
+    </ProductsCards>
+    </div>
     </div>
   );
 }
-
 export default App;
